@@ -1,0 +1,1 @@
+banka an app for banking where the user can create an account but deposit in withdrawal has to be done in the bank

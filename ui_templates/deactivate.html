@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link rel="stylesheet" href="main.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>admin||Banka||Deactivate</title>
+</head>
+<body>
+    <div class="admin-nav">
+    
+        <h3 class="admin-text"> Admin Dashboard</h3>
+        
+        <button class="side-bar-btn"><i class="fas fa-bars"></i></button>
+    </div>
+    <div class="side-bar">
+        <h3 class="admin text">Banka Admin </h3>
+        <ul>
+            <li>
+                <a href="admin.html"><i class='bx bxs-dashboard'></i><span>Dashboard</span></a>
+            </li>
+            <li>
+                <a href="activate.html"><i class='bx bxs-user-check'></i></i><span>Activate Account</span></a>
+            </li>
+            <li>
+                <a href="deactivate.html"><i class='bx bxs-user-x'></i><span>Dectivate Account</span></a>
+            </li>
+            <li>
+                <a href="record.html"><i class='bx bx-file'></i><span>View All Record</span></a>
+            </li>
+            <li>
+                <a href="staff.html"><i class='bx bxs-user-plus'></i><span>Create Staff</span></a>
+            </li>
+            <li>
+                <a href="delete.html"><i class='bx bx-trash'></i><span>Delete</span></a>
+            </li>
+            <li>
+                <a href="#"><i class='bx bxs-cog'></i><span>Settings</span></a>
+            </li>
+            <li>
+                <a href="#"><i class='bx bx-log-out'></i><span>Logout</span></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="activate">
+        <h2>Deactivate Account </h2>
+    </div>
+    <div class="activate-user">
+        <form action="/admin/banka/activate/account/v1" method="patch">
+            <h3 class="deposit">Deactivate Account</h3>
+            
+            <input name="accountNumber" class="credit" type="text" placeholder="Account Number">
+            <input name="status" class="credit" type="email" placeholder="Status">
+            
+    
+            <button class="credit-btn">Deactivate </button>
+        </form>
+    </div>
+
+<script src="file.js"></script>
+</body>
+</html>

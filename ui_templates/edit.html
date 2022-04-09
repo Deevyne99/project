@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="admin-nav">
+
+        <h3 class="admin-text"> User Dashboard</h3>
+
+
+        <button class="side-bar-btn"><i class="fas fa-bars"></i></button>
+    </div>
+    <div class="side-bar">
+        <h3 class="admin text">Banka User </h3>
+        <ul>
+            <li>
+                <a href="user.html"><i class='bx bxs-dashboard'></i><span>Dashboard</span></a>
+            </li>
+            <li>
+                <a href="profile.html"><i class='bx bxs-user-detail'></i><span>Profile</span></a>
+            </li>
+            <li>
+                <a href="record.html"><i class='bx bx-file'></i><span>View Transaction</span></a>
+            </li>
+            <li>
+                <a href="create.html"><i class='bx bxs-user-plus'></i><span>Create Account</span></a>
+            </li>
+
+            <li>
+                <a href="edit.html"><i class='bx bx-edit-alt'></i><span>Edit Profile</span></a>
+            </li>
+            <li>
+                <a href="#"><i class='bx bx-log-out'></i><span>Logout</span></a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="create">
+        <div class="form edit">
+            <div class="form-text">
+                <h4 class="header-form">Edit Profile</h4>
+            </div>
+            <form action="/user/create/banka/account/v1" method="post">
+
+                <input class="entry" name="firstName" type="text" placeholder="first name">
+                <input class="entry" name="lastName" type="text" placeholder="last name">
+                <input class="entry" name="email" type="email" placeholder="Email">
+                <input class="entry" name="phoneNumber" type="text" placeholder="Phone Number">
+                <input class="entry" name="date" type="datetime" placeholder="Date of Birth">
+                <input name="Nationality" class="entry" type="text" placeholder="Nationality">
+                <input class="entry" name="stateOfResidence" type="text" placeholder="state of residence">
+                <input class="entry" type="text" name="NextOfKin" placeholder="Next of kin">
+                <input class="entry" name="phoneNumberNOK" type="text" placeholder="Phone number N.O.K ">
+                
+
+                <div class="acct-btn">
+                    <button type="submit" class="create-acct">Save Changes</button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="file.js"></script>
+</body>
+
+</html>

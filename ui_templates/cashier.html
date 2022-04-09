@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="admin-nav">
+    
+        <h3 class="admin-text"> Cashier Dashboard</h3>
+        <form action="">
+            <input type="text" class="search">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </form>
+        <button class="side-bar-btn"><i class="fas fa-bars"></i></button>
+    </div>
+    <div class="side-bar">
+        <h3 class="admin text"> cashier Dashboard</h3>
+        <ul>
+            <li>
+                <a href="cashier.html"><i class='bx bxs-dashboard'></i><span>Dashboard</span></a>
+            </li>
+            <li>
+                <a href="credit.html"><i class='bx bxs-credit-card'></i><span>Credit Account</span></a>
+            </li>
+            <li>
+                <a href="debit.html"><i class='bx bxs-credit-card'></i><span>Debit Account</span></a>
+            </li>
+            
+            <li>
+                <a href="#"><i class='bx bxs-cog'></i><span>Settings</span></a>
+            </li>
+            <li>
+                <a href="#"><i class='bx bx-log-out'></i><span>Logout</span></a>
+            </li>
+        </ul>
+    </div>
+    
+    
+    
+    <div class="table">
+        <table>
+            <caption>Transaction History</caption>
+            <thead>
+                <tr>
+                    <th>Account No.</th>
+                    <th>Account Name</th>
+                    <th>Account </th>
+                    <th>Transaction </th>
+                    <th>Status</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    
+                    <td>3174710287</td>
+                    <td>Kalu Divne</td>
+                    <td>Current</td>
+                    <td>Withdrawal</td>
+                
+                        <td>
+                            <p class="status status-unpaid">Unpaid</p>
+                            </td>
+                    <td>2021-08-01</td>
+                    
+                    
+                    <td class="amount">$500</td>
+                </tr>
+                <tr>
+                
+                    <td>3174710387</td>
+                    <td>Paul Mark</td>
+                    <td>Savings</td>
+                    <td>Withdrawal</td>
+                
+                    <td>
+                        <p class="status status-pending">Pending</p>
+                    </td>
+                    <td>2021-08-01</td>
+                
+                
+                    <td class="amount">$2500</td>
+                </tr>
+                <tr>
+                
+                    <td>3174710288</td>
+                    <td>Mark John</td>
+                    <td>Current</td>
+                    <td>Withdrawal</td>
+                
+                    <td>
+                        <p class="status status-pending">Pending</p>
+                    </td>
+                    <td>2021-08-15</td>
+                
+                
+                    <td class="amount">$7500</td>
+                </tr>
+                <tr>
+                
+                    <td>3174710255</td>
+                    <td>kalu Ifeanyi</td>
+                    <td>Savings</td>
+                    <td>Deposit</td>
+                
+                    <td>
+                        <p class="status status-paid">Succesful</p>
+                    </td>
+                    <td>2022-10-01</td>
+                
+                
+                    <td class="amount">$500</td>
+                </tr>
+                <tr>
+                
+                    <td>3174710200</td>
+                    <td>Kelechi  Mike</td>
+                    <td>Current</td>
+                    <td>Deposit</td>
+                
+                    <td>
+                        <p class="status status-paid">successful</p>
+                    </td>
+                    <td>2022-08-01</td>
+                
+                
+                    <td class="amount">$700</td>
+                </tr>
+                           </tbody>
+        </table>
+    
+    </div>
+
+    <script src="file.js"></script>
+
+</body>
+</html>

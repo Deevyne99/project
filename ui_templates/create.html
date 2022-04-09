@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="admin-nav">
+    
+        <h3 class="admin-text"> User Dashboard</h3>
+    
+        
+        <button class="side-bar-btn"><i class="fas fa-bars"></i></button>
+    </div>
+    <div class="side-bar">
+        <h3 class="admin text">Banka User </h3>
+        <ul>
+            <li>
+                <a href="user.html"><i class='bx bxs-dashboard'></i><span>Dashboard</span></a>
+            </li>
+            <li>
+                <a href="profile.html"><i class='bx bxs-user-detail'></i><span>Profile</span></a>
+            </li>
+            <li>
+                <a href="transact.html"><i class='bx bx-file'></i><span>View Transaction</span></a>
+            </li>
+            <li>
+                <a href="create.html"><i class='bx bxs-user-plus'></i><span>Create Account</span></a>
+            </li>
+    
+            <li>
+                <a href="edit.html"><i class='bx bx-edit-alt'></i><span>Edit Profile</span></a>
+            </li>
+            <li>
+                <a href="#"><i class='bx bx-log-out'></i><span>Logout</span></a>
+            </li>
+        </ul>
+    </div>
+
+    
+    <div class="create">
+        <div class="form">
+            <div class="form-text">
+                <h4 class="header-form">Banka create account form</h4>
+            </div>
+            <form action="/user/create/banka/account/v1" method="post">
+    
+                <input class="entry" name="firstName" type="text" placeholder="first name">
+                <input class="entry" name="lastName" type="text" placeholder="last name">
+                <input class="entry" name="email" type="email" placeholder="Email">
+                <input class="entry" name="phoneNumber" type="text" placeholder="Phone Number">
+                <input class="entry" name="UserID" type="text" placeholder="UserID">
+                <input name="Nationality" class="entry" type="text" placeholder="Nationality">
+                <input class="entry" name="stateOfResidence" type="text" placeholder="state of residence">
+                <input class="entry" type="text" name="NextOfKin" placeholder="Next of kin">
+                <input class="entry" name="phoneNumberNOK" type="text" placeholder="Phone number N.O.K ">
+                <label class="label" for="sex"><br> Gender</label>
+                <select class="select" name="Gender" id="sex">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <label for="Birth">D.O.B</label>
+                <input class="entry date" name="Birth" id="Birth" type="date" value="2018-07-01" min="1960-01-02"
+                max="2050-01-03">
+                <input class="entry" name="OpeningBalance" type="text" placeholder="Opening Balance">
+                <label class="label" for="account">Account type </label>
+                <select class="select" name="accountType" id="account type">
+                    <option value="current">Current</option>
+                    <option value="savings">Savings</option>
+                </select>
+                    <label for="dateCreated">Date Created</label>
+
+                <input class="entry date" name="dateCreated" id="dateCreated" type="datetime" value="2018-07-01"
+                    min="1960-01-02" max="2050-01-03">
+    
+    
+                <div class="acct-btn">
+                    <button type="submit" class="create-acct">Create Account</button>
+                </div>
+            </form>
+            
+        </div>
+    
+    </div>
+
+    <script src="file.js"></script>
+</body>
+</html>
